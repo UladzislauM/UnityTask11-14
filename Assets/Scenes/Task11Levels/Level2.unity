@@ -432,6 +432,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315517161}
     m_Modifications:
+    - target: {fileID: 6307415376406534672, guid: 1b730e236174e524181e8a482512451d, type: 3}
+      propertyPath: info
+      value: 
+      objectReference: {fileID: 4435279190877422161}
     - target: {fileID: 8565605437536926996, guid: 1b730e236174e524181e8a482512451d, type: 3}
       propertyPath: m_Name
       value: DoorOnKey2 (1)
@@ -2426,7 +2430,7 @@ MonoBehaviour:
   points:
   - {x: 1274.372, y: 485.8059, z: 653.87}
   - {x: 1274.372, y: 490.71, z: 680.87}
-  speed: 10
+  speed: 5
 --- !u!65 &1515812135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2903,7 +2907,7 @@ MonoBehaviour:
   points:
   - {x: 1213.312, y: 485.8059, z: 550.8452}
   - {x: 1213.312, y: 485.8059, z: 540.13}
-  speed: 10
+  speed: 5
 --- !u!65 &1759704078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3023,15 +3027,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317281245404, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.48999
+      value: 40.35
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317281245404, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2099915
+      value: 6.19
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317281245404, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -50.330017
+      value: -54.05
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317281245404, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3066,12 +3070,20 @@ PrefabInstance:
       value: 40.92
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: jampForse
-      value: 2.8
+      value: 14.1
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: speedDown
-      value: 12.9
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
+      propertyPath: speedRotation
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 5206369318143186920, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: m_Name

@@ -19,7 +19,7 @@ public class Run : MonoBehaviour
         objectRigidbody = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Going();
 

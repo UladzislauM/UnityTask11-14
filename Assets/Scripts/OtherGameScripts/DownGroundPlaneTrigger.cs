@@ -16,11 +16,15 @@ namespace Walls
 
         private void OnTriggerEnter(Collider triggerEnter)
         {
-            if (triggerEnter.CompareTag("Gamer"))
+            if (triggerEnter.GetComponent<Controller>())
             {
                 gameManager.deathScreen.gameObject.SetActive(true);
                 gameManager.interfaceUI.gameObject.SetActive(false);
                 triggerEnter.GetComponent<Controller>().enabled = false;
+            }
+
+            if (triggerEnter.GetComponent<Rigidbody>())
+            {
                 triggerEnter.GetComponent<Rigidbody>().isKinematic = true;
             }
         }

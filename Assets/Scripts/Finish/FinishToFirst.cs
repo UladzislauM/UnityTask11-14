@@ -7,7 +7,7 @@ public class FinishToFirst : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Gamer"))
+        if (other.GetComponent<Rigidbody>())
         {
             SceneManager.LoadScene(0);
         } 

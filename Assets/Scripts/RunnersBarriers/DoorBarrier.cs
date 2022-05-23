@@ -16,7 +16,7 @@ namespace Walls
 
         private void OnTriggerEnter(Collider player)
         {
-            if (player.CompareTag("Gamer"))
+            if (player.GetComponent<Rigidbody>())
             {
                 hingleCheckVelosity = true;
                 info.SetActive(true);
@@ -25,7 +25,7 @@ namespace Walls
 
         private void OnTriggerExit(Collider playerExit)
         {
-            if (playerExit.CompareTag("Gamer"))
+            if (playerExit.GetComponent<Rigidbody>())
             {
                 info.SetActive(false);
             }

@@ -8,7 +8,7 @@ public class TriggerSetActive : MonoBehaviour
 
     private void OnTriggerEnter(Collider player)
     {
-        if (player.CompareTag("Gamer"))
+        if (player.GetComponent<Rigidbody>())
         {
             objectsSetActive.SetActive(true);
         }

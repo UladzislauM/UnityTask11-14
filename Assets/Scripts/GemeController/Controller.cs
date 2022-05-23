@@ -25,31 +25,31 @@ namespace Walls
 
         private void LateUpdate()
         {
-            MoveBehindCamera(inputController.movementUp, inputController.movementRight);
             PressPKey();
+        }
+
+        private void FixedUpdate()
+        {
+            MoveBehindCamera(inputController.movementUp, inputController.movementRight);
         }
 
         public void MoveBehindCamera(Vector3 movementUp, Vector3 movementRight)
         {
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
-                playerRigidbody.AddForce(movementUp * speed *
-                    Time.deltaTime, ForceMode.VelocityChange);
+                playerRigidbody.AddForce(movementUp * speed, ForceMode.VelocityChange);
             }
             if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
-                playerRigidbody.AddForce(-movementUp * speedDown *
-                    Time.deltaTime, ForceMode.VelocityChange);
+                playerRigidbody.AddForce(-movementUp * speedDown, ForceMode.VelocityChange);
             }
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
-                playerRigidbody.AddForce(movementRight * speed / 2 *
-                    Time.deltaTime, ForceMode.VelocityChange);
+                playerRigidbody.AddForce(movementRight * speed / 2, ForceMode.VelocityChange);
             }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
-                playerRigidbody.AddForce(-movementRight * speed / 2 *
-                    Time.deltaTime, ForceMode.VelocityChange);
+                playerRigidbody.AddForce(-movementRight * speed / 2, ForceMode.VelocityChange);
             }
             if (Input.GetAxis("Jump") > 0)
             {

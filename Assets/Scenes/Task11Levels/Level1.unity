@@ -841,7 +841,7 @@ MonoBehaviour:
   points:
   - {x: 1134.119, y: 484.8126, z: 493.1687}
   - {x: 1131.4, y: 500.36, z: 510.9}
-  speed: 32
+  speed: 5
 --- !u!65 &403796692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2686,7 +2686,7 @@ MonoBehaviour:
   points:
   - {x: 1079.979, y: 484.5, z: 496.9088}
   - {x: 1086.7, y: 500.63, z: 512.12}
-  speed: 20
+  speed: 5
 --- !u!65 &1692862967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3071,7 +3071,7 @@ MonoBehaviour:
   points:
   - {x: 1152.908, y: 484.8126, z: 486.1987}
   - {x: 1141.09, y: 484.8126, z: 493.3}
-  speed: 20
+  speed: 5
 --- !u!65 &2043952429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4130,8 +4130,20 @@ PrefabInstance:
       value: -0.0038922264
       objectReference: {fileID: 0}
     - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
+      propertyPath: jampForse
+      value: 14.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: speedDown
-      value: 12.2
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206369317956735102, guid: 32ab5164e915b634782367e2f360d870, type: 3}
+      propertyPath: speedRotation
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5206369318143186920, guid: 32ab5164e915b634782367e2f360d870, type: 3}
       propertyPath: m_Name
