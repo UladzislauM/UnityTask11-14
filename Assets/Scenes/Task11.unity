@@ -1273,7 +1273,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436866497}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0bc6a6f50272f640b1660aca8ceb269, type: 3}
   m_Name: 
@@ -1284,6 +1284,8 @@ MonoBehaviour:
   _buttonsOnPlayScreen: {fileID: 0}
   _interfaceUI: {fileID: 0}
   _pauseScreen: {fileID: 0}
+  _bonusText: {fileID: 0}
+  _particalExsplosion: {fileID: 0}
 --- !u!4 &1436866499
 Transform:
   m_ObjectHideFlags: 0

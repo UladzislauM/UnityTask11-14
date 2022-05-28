@@ -26,6 +26,9 @@ namespace Walls
             if (triggerEnter.GetComponent<Rigidbody>())
             {
                 triggerEnter.GetComponent<Rigidbody>().isKinematic = true;
+                triggerEnter.GetComponent<Animator>().enabled = true;
+                triggerEnter.transform.rotation = Quaternion.Euler(0, 0, 0);
+                gameManager.particalExplosion.gameObject.SetActive(true);
             }
         }
     }
