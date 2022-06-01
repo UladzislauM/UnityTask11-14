@@ -18,7 +18,7 @@ namespace Walls
             offset = transform.position - playerTransform.position;
         }
 
-        private void LateUpdate()
+        private void FixedUpdate()
         {
             FloatingCamera();
         }
