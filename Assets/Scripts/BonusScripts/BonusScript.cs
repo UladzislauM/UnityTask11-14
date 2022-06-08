@@ -22,7 +22,6 @@ namespace Walls
                 Destroy(bonus, 3f);
                 Destroy(gameObject, 0.2f);
                 gameManager.bonusPlus++;
-                Debug.Log("eee");
             }
         }
     }

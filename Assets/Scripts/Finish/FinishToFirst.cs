@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishToFirst : MonoBehaviour
+namespace Walls
 {
-    private void OnTriggerEnter(Collider other)
+    public class FinishToFirst : MonoBehaviour
     {
-        if (other.GetComponent<Rigidbody>())
+        [SerializeField] private GameObject particalSystem;
+        [SerializeField] private GameObject runner;
+        [SerializeField] private GameObject winText;
+
+        private void OnTriggerEnter(Collider other)
         {
-            SceneManager.LoadScene(0);
-        } 
+            if (other.GetComponent<Rigidbody>())
+            {
+                particalSystem.SetActive(true);
+                runner.GetComponent<Rigidbody>().isKinematic = true;
+                winText.SetActive(true);
+            }
+        }
     }
 }

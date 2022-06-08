@@ -45,11 +45,11 @@ namespace Walls
             }
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
-                playerRigidbody.AddForce(movementRight * speed / 2, ForceMode.VelocityChange);
+                playerRigidbody.AddForce(movementRight * speed, ForceMode.VelocityChange);
             }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
-                playerRigidbody.AddForce(-movementRight * speed / 2, ForceMode.VelocityChange);
+                playerRigidbody.AddForce(-movementRight * speed, ForceMode.VelocityChange);
             }
             if (Input.GetAxis("Jump") > 0)
             {

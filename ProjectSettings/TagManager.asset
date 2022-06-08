@@ -7,11 +7,12 @@ TagManager:
   - Gamer
   - FinishTrigger
   - ProBuilder
+  - ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

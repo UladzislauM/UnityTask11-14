@@ -18,7 +18,6 @@ namespace Walls
         private int _bonusPlus;
         private GameObject _currentScreen;
        
-
         public GameObject deathScreen { get { return _deathScreen; } set { _deathScreen = value; } }
         public GameObject interfaceUI { get { return _interfaceUI; } set { _interfaceUI = value; } }
         public int bonusPlus { get { return _bonusPlus; } set { _bonusPlus = value; } }
@@ -70,6 +69,5 @@ namespace Walls
             _pauseScreen.gameObject.SetActive(false);
             Time.timeScale = 1f;
         }
-       
     }
 }
