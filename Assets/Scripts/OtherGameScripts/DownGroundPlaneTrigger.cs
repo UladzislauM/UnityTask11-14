@@ -23,7 +23,7 @@ namespace Walls
                 triggerEnter.GetComponent<Controller>().enabled = false;
             }
 
-            if (triggerEnter.GetComponent<Rigidbody>())
+            if (triggerEnter.GetComponent<Rigidbody>() && triggerEnter.GetComponent<Controller>())
             {
                 triggerEnter.GetComponent<Rigidbody>().isKinematic = true;
                 triggerEnter.GetComponent<Animator>().enabled = true;
